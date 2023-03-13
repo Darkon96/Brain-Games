@@ -1,5 +1,9 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
+import question from '../src/cli.js';
+
 const game = (names) => {
+
     for (let i = 0; i < 3;) {
         let num = Math.round(Math.random() * 100);
         console.log('Question: ' + num);
@@ -19,5 +23,6 @@ const game = (names) => {
         }
     }
 }
+game(question());
 
 export default game;
