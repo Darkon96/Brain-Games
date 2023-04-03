@@ -5,6 +5,7 @@ const game = () => {
     console.log('Welcome to the Brain Games!');
     const names = readlineSync.question('May I have your name? ');
     console.log(`Hello ${names}!`);
+    console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3;) {
     const num = Math.round(Math.random() * 100);
     console.log(`Question: ${num}`);
