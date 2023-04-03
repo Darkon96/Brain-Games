@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import question from '../src/cli.js';
 
-const game = (names) => {
+const game = () => {
+    console.log('Welcome to the Brain Games!');
+    const names = readlineSync.question('May I have your name? ');
+    console.log(`Hello ${names}!`);
   for (let i = 0; i < 3;) {
     const num = Math.round(Math.random() * 100);
     console.log(`Question: ${num}`);
@@ -21,6 +23,6 @@ const game = (names) => {
     }
   }
 };
-game(question());
+game();
 
 export default game;
