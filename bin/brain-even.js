@@ -15,7 +15,7 @@ const game = () => {
       i += 1;
     } else {
       console.log('\'yes\' is wrong answer ;(. Correct answer was \'no\'.');
-      console.log(`Let's try again,${names}!`);
+      console.log(`Let's try again, ${names}!`);
       break;
     }
     if (i === 3) {
