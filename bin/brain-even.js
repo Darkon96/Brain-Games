@@ -2,15 +2,14 @@
 import readlineSync from 'readline-sync';
 
 const game = () => {
-    console.log('Welcome to the Brain Games!');
-    const names = readlineSync.question('May I have your name? ');
-    console.log(`Hello ${names}!`);
-    console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log('Welcome to the Brain Games!');
+  const names = readlineSync.question('May I have your name? ');
+  console.log(`Hello ${names}!`);
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3;) {
     const num = Math.round(Math.random() * 100);
     console.log(`Question: ${num}`);
     const answer = readlineSync.question('Your answer: ');
-
     if (((num % 2 === 0) && (answer === 'yes')) || ((num % 2 !== 0) && (answer === 'no'))) {
       console.log('Correct!');
       i += 1;
