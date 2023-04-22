@@ -15,3 +15,6 @@ publish:
 
 lint:
 	npx eslint .
+
+publishInstall:
+	sudo npm link
