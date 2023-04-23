@@ -8,11 +8,12 @@ const even = () => {
       const num = Math.round(Math.random() * 100);
       console.log(`Question: ${num}`);
       const answer = readlineSync.question('Your answer: ');
-      if (((num % 2 === 0) && (answer === 'yes')) || ((num % 2 !== 0) && (answer === 'no'))) {
+      const question = ((num % 2 === 0) && (answer === 'yes')) || ((num % 2 !== 0) && (answer === 'no'));
+      if (question) {
         console.log('Correct!');
         i += 1;
       } else {
-        console.log('\'yes\' is wrong answer ;(. Correct answer was \'no\'.');
+        console.log(`'Yes' is wrong answer ;(. Correct answer was 'No'.`);
         console.log(`Let's try again, ${names}!`);
         break;
       }

@@ -7,4 +7,11 @@ const username = () => {
   return names;
 };
 
-export default username;
+const gcdCalc = (a, b) => {
+  if (a == 0)
+      return b;
+  return gcdCalc(b % a, a);
+}
+
+
+export { username, gcdCalc };
