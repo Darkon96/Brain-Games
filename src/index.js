@@ -7,11 +7,10 @@ const username = () => {
   return names;
 };
 
-const gcdCalc = (a, b) => {
-  if (a == 0)
-      return b;
-  return gcdCalc(b % a, a);
+const randomInteger = (min, max) => {
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
 }
 
 
-export { username, gcdCalc };
+export { username, randomInteger };

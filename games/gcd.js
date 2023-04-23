@@ -1,5 +1,11 @@
 import readlineSync from 'readline-sync';
-import { username, gcdCalc } from '../src/index.js';
+import { username } from '../src/index.js';
+
+const gcdCalc = (a, b) => {
+  if (a == 0)
+      return b;
+  return gcdCalc(b % a, a);
+}
 
 const gcd = () => {
     const names = username();

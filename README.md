@@ -7,3 +7,5 @@
 <a href="https://asciinema.org/a/OQ1BihCnS0EW38ZtOEY3BzyGU" target="_blank"><img src="https://asciinema.org/a/OQ1BihCnS0EW38ZtOEY3BzyGU.svg" /></a>
 <h1>Gcd</h1>
 <a href="https://asciinema.org/a/72mxDYcnDFFUecbTJjbkYLHSe" target="_blank"><img src="https://asciinema.org/a/72mxDYcnDFFUecbTJjbkYLHSe.svg" /></a>
+<h1>Progression</h1>
+<a href="https://asciinema.org/a/1zMFrlL9wwmCyPXfaNGOA48kP" target="_blank"><img src="https://asciinema.org/a/1zMFrlL9wwmCyPXfaNGOA48kP.svg" /></a>
