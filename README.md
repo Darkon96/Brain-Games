@@ -24,31 +24,26 @@ $ brain-prime
 
 ### Демонстрации:
 
-brain-even:
 ```sh
 $ brain-even
 ```
 <a href="https://asciinema.org/a/nE93BCKMTZWBdTOejOudLiOP4" target="_blank"><img src="https://asciinema.org/a/nE93BCKMTZWBdTOejOudLiOP4.svg" /></a>
 
-brain-calc:
 ```sh
 $ brain-calc
 ```
 <a href="https://asciinema.org/a/OQ1BihCnS0EW38ZtOEY3BzyGU" target="_blank"><img src="https://asciinema.org/a/OQ1BihCnS0EW38ZtOEY3BzyGU.svg" /></a>
 
-brain-gcd:
 ```sh
 $ brain-gcd
 ```
 <a href="https://asciinema.org/a/72mxDYcnDFFUecbTJjbkYLHSe" target="_blank"><img src="https://asciinema.org/a/72mxDYcnDFFUecbTJjbkYLHSe.svg" /></a>
 
-brain-progression:
 ```sh
 $ brain-progression
 ```
 <a href="https://asciinema.org/a/1zMFrlL9wwmCyPXfaNGOA48kP" target="_blank"><img src="https://asciinema.org/a/1zMFrlL9wwmCyPXfaNGOA48kP.svg" /></a>
 
-brain-prime:
 ```sh
 $ brain-prime
 ```
@@ -93,12 +88,12 @@ Congratulations, Roman!
 JavaScript, NodeJS, Git, npm, ESLint, Codeclimate
 
 ### Полученные навыки:
-+ Настройка окружения: VSCode, node.js, npm, ESLint :heavy_check_mark:
-+ Работа с Git и Github :heavy_check_mark:
-+ Интеграция CodeClimate :heavy_check_mark:
-+ Подключение дополнительных библиотек(lodash, readlineSync) :heavy_check_mark:
-+ Построение архитектуры проекта :heavy_check_mark:
-+ Поддержка единого стиля кодирования Airbnb :heavy_check_mark:
++ Настройка окружения: VSCode, node.js, npm, ESLint             :heavy_check_mark:
++ Работа с Git и Github                                         :heavy_check_mark:
++ Интеграция CodeClimate                                        :heavy_check_mark:
++ Подключение дополнительных библиотек(lodash, readlineSync)    :heavy_check_mark:
++ Построение архитектуры проекта                                :heavy_check_mark:
++ Поддержка единого стиля кодирования Airbnb                    :heavy_check_mark:
 
 
 
@@ -140,9 +135,9 @@ Congratulations, Roman!
 JavaScript, NodeJS, Git, npm, ESLint, Codeclimate
 
 ### Get Skills:
-+ Setting up the environment: VSCode, node.js, npm, ESLint :heavy_check_mark:
-+ Working with Git and Github :heavy_check_mark:
-+ CodeClimate Integration
-+ Connecting additional libraries (Lodash, readlineasync) :heavy_check_mark:
-+ Building the project architecture :heavy_check_mark:
-+ Using a single Airbnb coding style :heavy_check_mark:
++ Setting up the environment: VSCode, node.js, npm, ESLint      :heavy_check_mark:
++ Working with Git and Github                                   :heavy_check_mark:
++ CodeClimate Integration                                       :heavy_check_mark:
++ Connecting additional libraries (Lodash, readlineasync)       :heavy_check_mark:
++ Building the project architecture                             :heavy_check_mark:
++ Using a single Airbnb coding style                            :heavy_check_mark:
