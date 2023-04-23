@@ -9,3 +9,5 @@
 <a href="https://asciinema.org/a/72mxDYcnDFFUecbTJjbkYLHSe" target="_blank"><img src="https://asciinema.org/a/72mxDYcnDFFUecbTJjbkYLHSe.svg" /></a>
 <h1>Progression</h1>
 <a href="https://asciinema.org/a/1zMFrlL9wwmCyPXfaNGOA48kP" target="_blank"><img src="https://asciinema.org/a/1zMFrlL9wwmCyPXfaNGOA48kP.svg" /></a>
+<h1>Prime</h1>
+<a href="https://asciinema.org/a/vsgUpKyBflNEu3fPVuoFECJn0" target="_blank"><img src="https://asciinema.org/a/vsgUpKyBflNEu3fPVuoFECJn0.svg" /></a>
