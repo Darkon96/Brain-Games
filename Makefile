@@ -30,3 +30,4 @@ lintFix:
 
 publishInstall:
 	sudo npm link
+
