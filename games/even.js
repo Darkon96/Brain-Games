@@ -3,7 +3,7 @@
 import { randomInt } from '../src/utils/functions.js';
 import game from '../src/index.js';
 
-const task = 'Answer "yes" if number even otherwise answer "no".';
+const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (num) => num % 2 === 0;
 
 const getData = () => {
