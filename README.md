@@ -135,9 +135,9 @@ Congratulations, Roman!
 JavaScript, NodeJS, Git, npm, ESLint, Codeclimate
 
 ### Get Skills:
-+ Setting up the environment: VSCode, node.js, npm, ESLint      :heavy_check_mark:
-+ Working with Git and Github                                   :heavy_check_mark:
-+ CodeClimate Integration                                       :heavy_check_mark:
-+ Connecting additional libraries (Lodash, readlineasync)       :heavy_check_mark:
-+ Building the project architecture                             :heavy_check_mark:
-+ Using a single Airbnb coding style                            :heavy_check_mark:
++ Setting up the environment: VSCode, node.js, npm, ESLint&ensp;&ensp;:heavy_check_mark:
++ Working with Git and Github&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;:heavy_check_mark:
++ CodeClimate Integration&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;:heavy_check_mark:
++ Connecting additional libraries (Lodash, readlineasync)&emsp;&ensp;:heavy_check_mark:
++ Building the project architecture&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&ensp;:heavy_check_mark:
++ Using a single Airbnb coding style&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:heavy_check_mark:
