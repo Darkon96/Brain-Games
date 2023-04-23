@@ -3,3 +3,5 @@ node_modules
 .eslintrc.yml
 
 .vscode
+
+./src/cli.js
