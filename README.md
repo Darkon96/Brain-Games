@@ -27,7 +27,7 @@ $ brain-prime
 ```sh
 $ brain-even
 ```
-<a href="https://asciinema.org/a/nE93BCKMTZWBdTOejOudLiOP4" target="_blank"><img src="https://asciinema.org/a/nE93BCKMTZWBdTOejOudLiOP4.svg" /></a>
+[![asciicast](https://asciinema.org/a/rpKCArVTlCwDGjU9hRKCHzOjY.svg)](https://asciinema.org/a/rpKCArVTlCwDGjU9hRKCHzOjY)
 
 ```sh
 $ brain-calc
