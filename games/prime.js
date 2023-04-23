@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { username, randomInteger } from '../src/index.js';
 
-const testPrime = (n) => {
+const x = (n) => {
   if (n === 1) {
     return false;
   }
@@ -23,7 +23,7 @@ const prime = () => {
     const num = randomInteger(1, 20);
     console.log(`Question: ${num}`);
     const answer = readlineSync.question('Your answer: ');
-    const question = (((answer === 'yes') && ((testPrime(num) === true))) || ((answer === 'no') && ((testPrime(num) === false))));
+    const question = (((answer === 'yes') && ((x(num) === true))) || ((answer === 'no') && ((x(num) === false))));
     if (question) {
       console.log('Correct!');
       i += 1;
