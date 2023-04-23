@@ -1,41 +1,26 @@
-import readlineSync from 'readline-sync';
-import { username, randomInteger } from '../src/index.js';
+/* eslint-disable import/extensions */
 
-const x = (n) => {
-  if (n === 1) {
+import { randomInt } from '../src/utils/functions.js';
+import game from '../src/index.js';
+
+const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const isPrime = (number) => {
+  if (number < 2) {
     return false;
   }
-  if (n === 2) {
-    return true;
-  }
-  for (let x = 2; x < n; x += 1) {
-    if (n % x === 0) {
-      return false;
-    }
+  for (let i = 2; i <= number / 2; i += 1) {
+    if (number % i === 0) return false;
   }
   return true;
 };
 
-const prime = () => {
-  const names = username();
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  for (let i = 0; i < 3;) {
-    const num = randomInteger(1, 20);
-    console.log(`Question: ${num}`);
-    const answer = readlineSync.question('Your answer: ');
-    const question = (((answer === 'yes') && ((x(num) === true))) || ((answer === 'no') && ((x(num) === false))));
-    if (question) {
-      console.log('Correct!');
-      i += 1;
-    } else {
-      console.log('\'Yes\' is wrong answer ;(. Correct answer was \'No\'.');
-      console.log(`Let's try again, ${names}!`);
-      break;
-    }
-    if (i === 3) {
-      console.log(`Congratulations, ${names}!`);
-    }
-  }
+const getData = () => {
+  const question = randomInt(1, 100);
+  const answer = isPrime(question) ? 'yes' : 'no';
+  return { question, answer };
 };
+
+const prime = () => game(task, getData);
 
 export default prime;
