@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import question from '../src/cli.js';
+/* eslint-disable import/extensions */
 
-console.log('Welcome to the Brain Games!');
-question();
+import greeting from '../src/index.js';
+
+greeting();
