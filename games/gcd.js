@@ -23,7 +23,7 @@ const getGreatestCommonDivisor = (n1, n2) => {
   const minNumber = n1 < n2 ? n1 : n2;
   let divisor = minNumber;
   while (divisor > 2) {
-    if ((getGcd(n1, divisor) === true) && (getGcd(n2, divisor) === true)) {
+    if (getGcd(n1, divisor) === true && getGcd(n2, divisor) === true) {
       break;
     }
     divisor -= 1;

@@ -33,3 +33,8 @@ lintFix:
 publishInstall:
 	sudo npm link
 
+prettierCheck: 
+	npx prettier . --check
+
+prettierFix:
+	npx prettier . --write

@@ -10,10 +10,10 @@ const getData = () => {
   const length = randomInt(5, 15);
   const indexOfHiddenNumber = randomInt(0, length - 1);
   const firstMember = randomInt(1, 20);
-  const answer = String(firstMember + (indexOfHiddenNumber * step));
+  const answer = String(firstMember + indexOfHiddenNumber * step);
   let question = '';
   for (let i = 0; i < length; i += 1) {
-    const currentMember = firstMember + (i * step);
+    const currentMember = firstMember + i * step;
     if (i !== indexOfHiddenNumber) {
       question = `${question}${currentMember} `;
     } else {

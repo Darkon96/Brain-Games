@@ -8,10 +8,14 @@ const operators = '+-*';
 
 const calculateExpression = (x, operator, y) => {
   switch (operator) {
-    case '*': return x * y;
-    case '+': return x + y;
-    case '-': return x - y;
-    default: return null;
+    case '*':
+      return x * y;
+    case '+':
+      return x + y;
+    case '-':
+      return x - y;
+    default:
+      return null;
   }
 };
 
