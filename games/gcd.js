@@ -1,5 +1,3 @@
-/* eslint-disable import/extensions */
-
 import { randomInt, getGcd } from '../src/utils/functions.js';
 import game from '../src/index.js';
 
