@@ -26,15 +26,11 @@ publish:
 
 lint:
 	npx eslint .
+	npx prettier . --check
 
 lintFix:
 	npx eslint . --fix
+	npx prettier . --write
 
 publishInstall:
 	sudo npm link
-
-prettierCheck: 
-	npx prettier . --check
-
-prettierFix:
-	npx prettier . --write
