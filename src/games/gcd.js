@@ -1,4 +1,4 @@
-import { getRandomNumber, getGCD } from '../utils/functions.js';
+import getRandomNumber from '../utils/functions.js';
 import game from '../index.js';
 
 const highBorderOfNumbers = 100;
@@ -6,6 +6,12 @@ const minMultiplyer = 2;
 const maxMultiplyer = highBorderOfNumbers / 10;
 
 const task = 'Find the greatest common divisor of given numbers.';
+
+function getGCD(x, y) {
+  if (y > x) return getGCD(y, x);
+  if (!y) return x;
+  return getGCD(y, x % y);
+}
 
 const getRandomNumbersForGame = () => {
   const multy = getRandomNumber(minMultiplyer, maxMultiplyer);

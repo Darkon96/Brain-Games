@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../utils/functions.js';
+import getRandomNumber from '../utils/functions.js';
 import game from '../index.js';
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
