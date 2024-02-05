@@ -1,5 +1,5 @@
-import { randomInt } from '../src/utils/functions.js';
-import game from '../src/index.js';
+import { randomInt } from '../utils/functions.js';
+import game from '../index.js';
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (num) => num % 2 === 0;

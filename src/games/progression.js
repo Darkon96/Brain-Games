@@ -1,5 +1,5 @@
-import { randomInt } from '../src/utils/functions.js';
-import game from '../src/index.js';
+import { randomInt } from '../utils/functions.js';
+import game from '../index.js';
 
 export const task = 'What number is missing in the progression?';
 

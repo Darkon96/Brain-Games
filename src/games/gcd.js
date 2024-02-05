@@ -1,5 +1,5 @@
-import { randomInt, getGcd } from '../src/utils/functions.js';
-import game from '../src/index.js';
+import { randomInt, getGcd } from '../utils/functions.js';
+import game from '../index.js';
 
 const highBorderOfNumbers = 100;
 const minMultiplyer = 2;
