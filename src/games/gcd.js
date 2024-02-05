@@ -1,4 +1,4 @@
-import { randomInt, getGcd } from '../utils/functions.js';
+import { getRandomNumber, getGcd } from '../utils/functions.js';
 import game from '../index.js';
 
 const highBorderOfNumbers = 100;
@@ -8,20 +8,20 @@ const maxMultiplyer = highBorderOfNumbers / 10;
 const task = 'Find the greatest common divisor of given numbers.';
 
 const getRandomNumbersForGame = () => {
-  const multy = randomInt(minMultiplyer, maxMultiplyer);
-  const num1 = multy * randomInt(2, 10);
-  let num2 = num1;
-  while (num1 === num2) {
-    num2 = multy * randomInt(2, 10);
+  const multy = getRandomNumber(minMultiplyer, maxMultiplyer);
+  const number1 = multy * getRandomNumber(2, 10);
+  let number2 = number1;
+  while (number1 === number2) {
+    number2 = multy * getRandomNumber(2, 10);
   }
-  return { num1, num2 };
+  return { number1, number2 };
 };
 
-const getGreatestCommonDivisor = (n1, n2) => {
-  const minNumber = n1 < n2 ? n1 : n2;
+const getGreatestCommonDivisor = (number1, number2) => {
+  const minNumber = number1 < number2 ? number1 : number2;
   let divisor = minNumber;
   while (divisor > 2) {
-    if (getGcd(n1, divisor) === true && getGcd(n2, divisor) === true) {
+    if (getGcd(number1, divisor) === true && getGcd(number2, divisor) === true) {
       break;
     }
     divisor -= 1;
@@ -30,9 +30,9 @@ const getGreatestCommonDivisor = (n1, n2) => {
 };
 
 const getData = () => {
-  const { num1, num2 } = getRandomNumbersForGame();
-  const answer = String(getGreatestCommonDivisor(num1, num2));
-  const question = `${num1} ${num2}`;
+  const { number1, number2 } = getRandomNumbersForGame();
+  const answer = String(getGreatestCommonDivisor(number1, number2));
+  const question = `${number1} ${number2}`;
   return { question, answer };
 };
 

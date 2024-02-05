@@ -1,4 +1,4 @@
-import { randomInt } from '../utils/functions.js';
+import { getRandomNumber } from '../utils/functions.js';
 import game from '../index.js';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -14,7 +14,7 @@ const isPrime = (number) => {
 };
 
 const getData = () => {
-  const question = randomInt(1, 100);
+  const question = getRandomNumber(1, 100);
   const answer = isPrime(question) ? 'yes' : 'no';
   return { question, answer };
 };

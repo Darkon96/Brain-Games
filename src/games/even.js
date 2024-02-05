@@ -1,11 +1,11 @@
-import { randomInt } from '../utils/functions.js';
+import { getRandomNumber } from '../utils/functions.js';
 import game from '../index.js';
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
-const isEven = (num) => num % 2 === 0;
+const isEven = (number) => number % 2 === 0;
 
 const getData = () => {
-  const question = randomInt(0, 100);
+  const question = getRandomNumber(0, 100);
   const answer = isEven(question) ? 'yes' : 'no';
   return { question, answer };
 };

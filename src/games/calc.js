@@ -1,10 +1,10 @@
-import { randomInt } from '../utils/functions.js';
+import { getRandomNumber } from '../utils/functions.js';
 import game from '../index.js';
 
 const task = 'What is the result of the expression?';
 const operators = '+-*';
 
-const calculateExpression = (x, operator, y) => {
+const calculate = (x, operator, y) => {
   switch (operator) {
     case '*':
       return x * y;
@@ -13,16 +13,16 @@ const calculateExpression = (x, operator, y) => {
     case '-':
       return x - y;
     default:
-      return null;
+      throw new Error(`Unknown operator in switch: '${operator}'!`);
   }
 };
 
 const getData = () => {
-  const num1 = randomInt(0, 100);
-  const num2 = randomInt(0, 100);
-  const operation = operators.charAt(randomInt(0, operators.length - 1));
-  const answer = String(calculateExpression(num1, operation, num2));
-  const question = `${num1} ${operation} ${num2}`;
+  const number1 = getRandomNumber(0, 100);
+  const number2 = getRandomNumber(0, 100);
+  const operation = operators.charAt(getRandomNumber(0, operators.length - 1));
+  const answer = String(calculate(number1, operation, number2));
+  const question = `${number1} ${operation} ${number2}`;
   return { question, answer };
 };
 const calc = () => game(task, getData);
