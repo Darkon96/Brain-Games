@@ -1,4 +1,4 @@
-import { getRandomNumber, getGcd } from '../utils/functions.js';
+import { getRandomNumber} from '../utils/functions.js';
 import game from '../index.js';
 
 const highBorderOfNumbers = 100;
@@ -17,17 +17,11 @@ const getRandomNumbersForGame = () => {
   return { number1, number2 };
 };
 
-const getGreatestCommonDivisor = (number1, number2) => {
-  const minNumber = number1 < number2 ? number1 : number2;
-  let divisor = minNumber;
-  while (divisor > 2) {
-    if (getGcd(number1, divisor) === true && getGcd(number2, divisor) === true) {
-      break;
-    }
-    divisor -= 1;
-  }
-  return divisor;
-};
+function getGreatestCommonDivisor(x, y) {
+  if (y > x) return getGreatestCommonDivisor(y, x);
+	if (!y) return x;
+	return getGreatestCommonDivisor(y, x % y);
+}
 
 const getData = () => {
   const { number1, number2 } = getRandomNumbersForGame();
