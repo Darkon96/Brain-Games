@@ -1,5 +1,5 @@
 import getRandomNumber from '../utils/functions.js';
-import game from '../index.js';
+import runEngine from '../index.js';
 
 const task = 'What is the result of the expression?';
 const operators = '+-*';
@@ -17,7 +17,7 @@ const calculate = (x, operator, y) => {
   }
 };
 
-const getData = () => {
+const generateRound = () => {
   const number1 = getRandomNumber(0, 100);
   const number2 = getRandomNumber(0, 100);
   const operation = operators.charAt(getRandomNumber(0, operators.length - 1));
@@ -25,6 +25,6 @@ const getData = () => {
   const question = `${number1} ${operation} ${number2}`;
   return { question, answer };
 };
-const calc = () => game(task, getData);
+const runCalc = () => runEngine(task, generateRound);
 
-export default calc;
+export default runCalc;

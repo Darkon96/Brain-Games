@@ -1,5 +1,5 @@
 import getRandomNumber from '../utils/functions.js';
-import game from '../index.js';
+import runEngine from '../index.js';
 
 export const task = 'What number is missing in the progression?';
 
@@ -11,20 +11,20 @@ function getProgression(step, length, firstMember) {
   return progression;
 }
 
-const getData = () => {
+const generateRound = () => {
   const step = getRandomNumber(1, 10);
   const length = getRandomNumber(5, 15);
   const firstMember = getRandomNumber(1, 20);
-  const arrayProgression = getProgression(step, length, firstMember);
+  const progression = getProgression(step, length, firstMember);
 
-  const indexOfHiddenNumber = getRandomNumber(0, arrayProgression.length - 1);
-  const answer = String(arrayProgression[indexOfHiddenNumber]);
-  arrayProgression[indexOfHiddenNumber] = '..';
-  const question = arrayProgression.toString().replaceAll(',', ' ');
+  const hiddenIndex = getRandomNumber(0, progression.length - 1);
+  const answer = String(progression[hiddenIndex]);
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
 
   return { question, answer };
 };
 
-const progression = () => game(task, getData);
+const runProgression = () => runEngine(task, generateRound);
 
-export default progression;
+export default runProgression;

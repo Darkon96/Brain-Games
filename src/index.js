@@ -1,10 +1,8 @@
-/* eslint-disable import/extensions */
-
 import readlineSync from 'readline-sync';
 
 const roundsCount = 3;
 
-const game = (task, generateRound) => {
+const runEngine = (task, generateRound) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -25,4 +23,4 @@ const game = (task, generateRound) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default game;
+export default runEngine;
